@@ -11,6 +11,15 @@ li {
     list-style: none;
 }
 
+a,
+a:visited {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 1000;
+    position: relative;
+}
+
 p {
     font-size: 0.8rem;
 }
@@ -19,6 +28,33 @@ body {
     min-height: 100vh;
     background: rgb(29, 29, 29);
     color: rgb(250, 250, 250);
+}
+
+.mouse {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 1500px;
+    mix-blend-mode: difference;
+}
+
+#cursor {
+    background: rgb(33, 40, 189);
+    width: 14px;
+    height: 14px;
+}
+
+#mouse-1 {
+    background: white;
+    width: 100px;
+    height: 100px;
+    transition: 0.1s ease-out;
+}
+
+#mouse-2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(41, 41, 41);
+    transition: 0.2s ease-out;
 }
 
 nav {
