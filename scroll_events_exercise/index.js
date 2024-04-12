@@ -1,6 +1,9 @@
 let playOnce = true;
 
 window.addEventListener("scroll", () => {
+
+    // Navbar effect
+    
     if (window.scrollY > 50) {
         navbar.style.height = "45px";
     } else {
