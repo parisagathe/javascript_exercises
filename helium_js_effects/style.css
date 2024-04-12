@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Saira+Condensed:wght@500&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(29, 29, 29);
+    color: rgb(250, 250, 250);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.main-left-container h3 {
+    color: rgb(71, 77, 255);
+}
+
+.main-right {
+    width: 50%;
+}
+
+#modem {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
+}
+
+.btn-container {
+    display: grid;
+}
+
+button {
+    border: none;
+    background: rgb(71, 77, 255);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.infos-right {
+    width: 67%;
+}
+
+.investors {
+    display: grid;
+    align-items: center;
+    height: 86%;
+    width: 100%;
+}
+
+.investors-img-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.investors-img-container img {
+    height: 60px;
+}
+
+/* *************************** MEDIA QUERIES *************************** */
+
+@media screen and (max-width: 870px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-left-container h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    nav {
+        grid-template-columns: 35% 65%;
+    }
+
+    nav ul {
+        font-size: 0.7rem;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .infos {
+        display: block;
+        text-align: center;
+    }
+
+    button {
+        margin: 5px auto;
+    }
+
+    .investors-img-container img {
+        height: 33px;
+    }
+}
