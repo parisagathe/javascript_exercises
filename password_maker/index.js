@@ -5,8 +5,6 @@ const dataSymbols = "$^*ù!:;,&é\"\'\(-è_ç\)à?%@#§";
 const rangeValue = document.getElementById("password-length");
 const passwordOutput = document.getElementById("password-output");
 
-console.log(rangeValue.value);
-
 function generatePassword() {
     let data = [];
     let password = "";
@@ -23,7 +21,6 @@ function generatePassword() {
 
     for (i = 0; i < rangeValue.value; i++) {
         password += data[Math.floor(Math.random() * data.length)];
-        console.log(password);
     }
 
     passwordOutput.value = password;
