@@ -10,6 +10,19 @@
     <script defer src="./index.js"></script>
 </head>
 <body>
+
+    <div class="filter-container">
+        <input type="text" id="inputSearch" placeholder="Rechercher">
+        <div class="range-container">
+            <input type="range" id="inputRange" value="24" max="250">
+            <span id="rangeValue">24</span>
+        </div>
+        <button class="btnSort" id="minToMax">Tri croissant</button>
+        <button class="btnSort" id="maxToMin">Tri décroissant</button>
+        <button class="btnSort" id="alpha">Tri alphabétique</button>
+    </div>
+
+    <div class="countries-container"></div>
     
 </body>
 </html>
