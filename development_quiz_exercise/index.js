@@ -94,7 +94,7 @@ const display = {
     endQuiz: function() {
         let endQuizHtml = `
             <h1>Quiz terminé !</h1>
-            <h3>Votre score est de = ${quiz.score} / ${quiz.questions.length}</h3>
+            <h3>Votre score est de ${quiz.score} / ${quiz.questions.length}</h3>
         `
         this.elementShown("quiz", endQuizHtml);
     }
